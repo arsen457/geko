@@ -1,6 +1,8 @@
  body{
         background-color: #5d3a3a;
         margin: 0;
+        height: 400px;
+        width: 300px;
     }
   div {
     width: 200px;
