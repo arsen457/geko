@@ -1,5 +1,33 @@
-#pond {
-  display: flex;
-
-justify-content: space-between;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body{
+  background:#eee;
+  font-family:Arial;
+}
+
+.container{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:20px;
+  padding:20px;
+}
+
+.box{
+  background:#3b73c6;
+  color:white;
+  text-align:center;
+  padding:30px 0;
+  border-radius:10px;
+  font-size:20px;
+}
+
+.tiv-12{ grid-column:span 12; }
+.tiv-6{ grid-column:span 6; }
+.tiv-4{ grid-column:span 4; }
+.tiv-3{ grid-column:span 3; }
+.tiv-2{ grid-column:span 2; }
+.tiv-1{ grid-column:span 1; }
