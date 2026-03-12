@@ -31,3 +31,11 @@ body{
     background:#b58863;
 }
 
+
+.cell:not(:empty){
+    cursor:grab;
+}
+
+.cell:not(:empty):active{
+    cursor:grabbing;
+}
