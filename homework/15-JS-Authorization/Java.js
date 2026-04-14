@@ -29,4 +29,4 @@ function login(users, username, password) {
   console.log(`Բարի գալուստ, ${username}`);
 }
 
-login(users,"admin","1234")
+login(users,"john","qwerty")
