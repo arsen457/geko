@@ -6,7 +6,7 @@ import {
 } from "./features/users/usersApi";
 
 function App() {
-  const { data, isLoading, error } = useGetUsersQuery();
+  const { data, error, isLoading } = useGetUsersQuery();
 
   const [addUser] = useAddUserMutation();
 
@@ -17,13 +17,9 @@ function App() {
     });
   };
 
-  if (isLoading) {
-    return <h1>Loading...</h1>;
-  }
+  if (isLoading) return <h1>Loading...</h1>;
 
-  if (error) {
-    return <h1>Error...</h1>;
-  }
+  if (error) return <h1>Error...</h1>;
 
   return (
     <div>
